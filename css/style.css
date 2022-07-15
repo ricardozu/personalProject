@@ -1,0 +1,627 @@
+:root{
+    --gold1:#F4BD76;
+    --gold2:#F6CD8F;
+    --gray:#ffffff80;
+    --gray2:#f7d9d990;
+    --black1:#1A1B1F;
+    --black2:#30353B;
+    --shadow: 0 8px 8px;
+    --color__shadow:#00000033;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*padding:60px 0 desktop*/
+    padding: 20px 0;
+    height: auto;
+}
+
+/* .container__modifier{
+    width: 70%;   
+   } */
+
+/*Las clases solas, se utlizan para poner el backgroud*/
+.hero{
+    width: 100%;
+    /*Desktop*/
+    /* min-height:100vh; */
+    background:linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%) ;
+}
+
+.nav__hero{
+    color: #fff; 
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Alto heredado de la clase padre*/
+    height:inherit ;
+    /*Para quitarle el Padding de container*/
+    padding: 0;
+}
+
+.nav__logo h2{
+    /*2.4 en desktop*/
+    font-size: 1.5rem;
+}
+
+.nav__links{
+    justify-self: flex-end;
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 1px;
+}
+
+.link__active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero__main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+    padding: 5px 0;
+}
+
+.mockup{
+    /*En desktop 48% para que se comparta con hero__text*/
+    width: 100%;
+    object-fit: cover;
+    /*Desktop*/
+    /* height: calc(100vh - 70px); */
+    align-self: center;
+}
+
+/*
+.hero__text{
+    width: 48%; 
+}
+
+*/
+
+.title{
+    /*Desktop 5.6rem*/
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #FFF;
+}
+
+.title__active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-family: 1.6rem;
+    color: var(--gray); 
+    text-shadow: (--shadow) var(--color__shadow);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    display: inline-block;
+    padding: 15px 22px;
+    background: linear-gradient(180deg, #F7CE90 0%, #F48D76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color__shadow);
+    border-radius: 6px;
+    
+}
+
+/*Services*/
+
+.services{
+    background: #fafafa;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
+
+.subtitle__modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.copy__section{
+    color: var(--black2);
+    /*22 px en desktop*/
+    font-size: 1.4rem;
+    /*32px en desktop*/
+    line-height: 1.6rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copy__section-modifier{
+    text-align: center;
+    /*32px en Desktop*/
+    margin-bottom: 16px;
+}
+
+.container___cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    width: 100%; 
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 15px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color__shadow);
+}
+
+.card__img{
+    /*Para que la imagen este a la derecha*/
+    align-self: flex-end;
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card__text{
+    width: 95%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    /*Desktop: margin: 5px 0 12px*/
+    margin: 5px 0 12px;
+    font-size: 18px;
+}
+
+.card__title{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card__copy{
+    color: var(--gray2);
+    margin-bottom: 16px;
+}
+
+.card__button{
+    /*Para darle dimensiones al cta, ya que es un elemento a*/
+    display: block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F48D76 100%);
+    border-radius: 6px;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    /*Para darle ancho*/
+    padding: 12px 0;
+}
+
+
+/*Projects*/
+
+.container__bg{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__bg .card{
+    /*margin: 0 desktop */
+    margin: 15px 0;
+}
+
+.card__date{
+    color: var(--gold2);
+    font-size: 1.8rem;
+    font-size: bold;
+    margin-bottom: 16px;
+}
+
+.background{
+    position: relative;
+    /*Desktop 68%*/
+    width: 100%;
+    /*Alto de la imagen*/
+    height: 190px;
+    border-radius: 10px;
+}
+
+
+.background__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: #fff;
+}
+
+.background__title{
+    font-size: 2.4rem;
+    margin-bottom: 4px;
+}
+
+/*Testimony*/
+
+.testimoy{
+    background: #fafafa;
+}
+
+.testimony__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimony__card{
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.testimony__img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.testimony__copy{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color__shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.testimony__copy--modifier{
+    background: none;
+    box-shadow: none;
+}
+
+.testimony__logo{
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.testimony__name{
+    /*font-size:2.4rem desktop*/
+    font-size: 1.4rem;
+    line-height: 28px;
+}
+
+.testimony__position{
+    color: var(--gray);
+}
+
+.testimony__text{
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.google__logo{
+    margin-bottom: 15px;
+}
+
+.logo--picture{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;
+    margin-right: 15px;
+}
+
+.testimony__history{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.testimony__info{
+    width: 70%;
+}
+
+/*Check*/
+
+.check{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.check__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    padding-right:10px;
+    border-right: 2px solid var(--black2);
+}
+
+.bx-check{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: #fff;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.check__number{
+    font-weight: 700;
+}
+
+.check__copy{
+    font-weight: 300;
+}
+
+.newsletter{
+    /*Desktop 60%*/
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    font-family: inherit;
+    position: relative;
+    border-radius: 6px;
+}
+
+.newsletter__modifier{
+    margin: 0;
+    /*Desktop 80%*/
+    width: 100%;
+}
+
+.newsletter__input{
+    width: 100%;
+    height: 100%;
+    padding: 22px 10px;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid var(--black1);
+}
+
+.newsletter__submit{
+    position: absolute;
+    right: 8px;
+    /*Desktop 10%*/
+    top: 32%;
+    /*Desktop: 80%*/
+    height: 40%;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    color: #fff;
+    padding: 0 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer{
+    background: #fafafa;
+}
+
+.footer__caption{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.footer__donwload{
+    /*50% desktop*/
+    width: 95%;
+    
+}
+
+.donwload__app{
+    display: flex;
+}
+
+.donwload__item{
+    display: flex;
+    /*padding: 18px 12px*/
+    padding: 12px 5px;
+    border-radius: 6px;
+    border: 1px solid var(--black2);
+    width: 42%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    /*0 en desktop*/
+   
+}
+
+.donwload__logo{
+    margin-right: 5px;
+    /*font-size: 40px;*/
+
+}
+
+.donwload__title{
+    font-size: 1rem;
+}
+
+.title__footer{
+   font-size: 2.4rem;
+   margin-bottom: 32px; 
+}
+
+.footer__copy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--black2);
+}
+
+.copyright{
+    width: 100%;
+}
+
+.politica__privacidad{
+   color: inherit; 
+   text-decoration: none;
+   display: inline-block;
+   margin-top: 10px;
+}
+
+.politica__privacidad:hover{
+    text-decoration: underline;
+}
+
+.politica__privacidad--margin{
+    margin-right: 10px;
+}
+
+.get__email{
+    /*width: 50% desktop*/
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.social__media{
+    display: flex;
+    margin-top: 24px;
+    color: var(--black2);
+}
+
+.socialmedia__legend{
+    color: var(--black2);
+    margin-right: 6px;
+    font-size: 1.5rem;
+}
+
+.social__media-icon{
+    display: inline-block;
+    font-size: 1.8rem;
+    /*margin-right: 30px*/ 
+    margin-right: 6px;
+}
+
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #fff;
+}
+
+.item__contact{
+    /*25% desktop*/
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.item__contact--gold{
+    background: linear-gradient(180deg, #F7CE90 0%, #F48D76 100%);
+    color: var(--black1);
+}
+
+.contact__icon{
+    display: inline-block;
+    font-size: 14px;
+    color: var(--gold1);
+    line-height: 4px;
+}
+
+.contact__icon--modifier{
+    color: var(--black1);
+}
+
+.contact__title{
+    font-size: 1.6rem;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+.nav__logo h2{
+    /*2.4 en desktop*/
+    font-size: 2.4rem;
+}
+
+.link{
+    font-size: 1.4rem;
+    padding: 6px;
+}
+
+.cta{
+    padding: 20px 30px;
+}
+
+.mockup{
+    width: 600px;
+}
+
+.service{
+    text-align: center;
+}
+
+.container___cards{
+    justify-content: center;
+}
+
+.container__bg .card{
+    width: 29%;
+}
+
+.background{
+    /*Desktop 68%*/
+    width: 50%;
+}
+
+.testimony__card{
+    max-width: 450px;
+}
+
+.item__contact{
+    /*25% desktop*/
+    width: 25%;
+    
+}
+
+
+
+
+
+
+
+
+
